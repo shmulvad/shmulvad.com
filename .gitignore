@@ -28,3 +28,6 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Some files I might use in the future
+ignore/
