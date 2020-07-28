@@ -1,0 +1,48 @@
+/* Introduction */
+
+
+#parallax {
+  position: relative;
+  background: #141793;
+  width: 100%;
+  height: 140vh;
+  overflow: hidden;
+
+  .info-text {
+    margin: 20px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+  }
+
+  #welcome-text {
+    position: absolute;
+    color: white;
+    font-size: 10vw;
+    top: 25%;
+    left: 12%;
+    animation: fade 2s ease-in 0s 1 normal forwards;
+  }
+
+  #read-more {
+    position: relative;
+    animation: fade 2s ease 4s 1 normal forwards;
+  }
+
+  #long-wait {
+    position: absolute;
+    top: 10%;
+    opacity: 1 !important;
+  }
+
+  .parallax-elm {
+    opacity: 0;
+    position: absolute;
+    animation: fade 2s ease-in 2s 1 normal forwards;
+  }
+
+  @keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+}
