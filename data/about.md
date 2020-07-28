@@ -7,13 +7,16 @@ You’re more than welcome to [contact me](/contact) if you have questions of an
 
 ### Past
 
-_I love to learn and build my own stuff!_ I've recently finished my bachelor's degree in Computer Science at the University of Copenhagen (UCPH) where I was specializing in data science. During my bachelor, I spent a semester abroad in Singapore where I fell in love with both the country, university and a particular girl. It also didn't take long before I knew I had to came back.
+I recently finished my bachelor's degree in Computer Science at the University of Copenhagen (UCPH) where I was specializing in data science. During my bachelor, I spent a semester abroad in Singapore where I fell in love with both the country, university and a particular girl. It did not take long before I knew I had to came back.
 <br></br>
 
-In my experience, creating high quality software requires a broad field of technological knowledge – from architecture and how the compiler translates your code to various aspects of back-end and how the end-user experiences the front-end. So besides my formal education, I also make sure to fill up my spare time with online courses, blogposts and reading books.
+I love to learn and build my own stuff!
 <br></br>
 
-Before focusing a lot of my energy on Computer Science, I have also been very active in youth policy where I have had various positions of trust and in addition received professional education at the think tank CEPOS. Furthermore, I’ve finished compulsory military service and graduated high school at Risskov Gymnasium where I studied primarily mathematics and physics. The site you’re looking at right now is my personal website which is also an aggregator for some of my work.
+In my experience, creating high quality software requires a broad field of technical knowledge – from architecture and how the compiler translates your code to various aspects of backend and how the end-user experiences the frontend. Besides my formal education, I tend to fill up my spare time with online courses, blogposts and books.
+<br></br>
+
+Prior to pursuing computer science, I was active in youth politics where I have had various positions of trust and in addition received professional education at the think tank CEPOS. Furthermore, I’ve finished compulsory military service. The site you’re looking at right now is my personal website which is also an aggregator for some of my work.
 <br></br>
 
 ### I like
