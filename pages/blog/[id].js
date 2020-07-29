@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import Link from "next/link";
 import Head from 'next/head';
 
@@ -17,9 +16,9 @@ const Post = ({ postData }) => {
       <Head>
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content={postData.title} />
-        <meta property="og:description" content={postData.short} />
-        <meta property="og:image" content={websiteLong + postData.heroImg} />
+        <meta property="og:title" content={postData.title} key="title" />
+        <meta property="og:description" content={postData.short} key="description" />
+        <meta property="og:image" content={websiteLong + postData.heroImg} key="image" />
         {postData.containsMath && (
           <link
             rel="stylesheet"

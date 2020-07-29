@@ -5,7 +5,8 @@ import Nav from '../components/template/nav';
 
 import faviconHtml from '../data/favicon'
 import { fullName, websiteLong } from '../data/contact';
-export const siteTitle = fullName;
+
+const siteTitle = fullName;
 
 const Layout = ({ children, fullPage, title }) => {
   return (
@@ -20,9 +21,10 @@ const Layout = ({ children, fullPage, title }) => {
         <meta
           name="description"
           content={`${fullName}'s personal website. Facts, thoughts, bad ideas, and everything else.`}
+          key="description"
         />
-        <meta property="og:image" content={`${websiteLong}/images/shmulvad.jpg`} />
-        <meta name="og:title" content={siteTitle} />
+        <meta property="og:image" content={`${websiteLong}/images/shmulvad.jpg`} key="image" />
+        <meta name="og:title" content={siteTitle} key="title" />
         <meta name="twitter:creator" content="@shmulvad" />
         <meta name="twitter:card" content="summary_large_image" />
         <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title> :
