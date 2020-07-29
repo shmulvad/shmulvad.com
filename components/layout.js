@@ -1,14 +1,15 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import Header from '../components/template/header';
-import Nav from '../components/template/nav';
+import Header from "../components/template/header";
+import Nav from "../components/template/nav";
+import Archive from "../components/blog/archive";
 
-import faviconHtml from '../data/favicon'
-import { fullName, websiteLong } from '../data/contact';
+import faviconHtml from "../data/favicon";
+import { fullName, websiteLong } from "../data/contact";
 
 const siteTitle = fullName;
 
-const Layout = ({ children, fullPage, title, description }) => {
+const Layout = ({ children, title, description, sortedPostsData }) => {
   const titleToUse = title ? `${title} | ${siteTitle}` : siteTitle;
   return (
     <div id="wrapper">
@@ -24,7 +25,11 @@ const Layout = ({ children, fullPage, title, description }) => {
           content={`${fullName}'s personal website. ${description}`}
           key="description"
         />
-        <meta property="og:image" content={`${websiteLong}/images/shmulvad.jpg`} key="image" />
+        <meta
+          property="og:image"
+          content={`${websiteLong}/images/shmulvad.jpg`}
+          key="image"
+        />
         <meta name="og:title" content={titleToUse} key="title" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:creator" content="@shmulvad" />
@@ -33,9 +38,9 @@ const Layout = ({ children, fullPage, title, description }) => {
       </Head>
       <Header />
       <main id="main">{children}</main>
-      {!fullPage && <Nav />}
+      {!!sortedPostsData ? <Archive sortedPostsData={sortedPostsData} /> : <Nav />}
     </div>
-  )
-}
+  );
+};
 
 export default Layout;

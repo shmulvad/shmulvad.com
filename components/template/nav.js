@@ -1,19 +1,12 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import SocialIcons from '../general/social-icons';
+import Footer from "./footer";
 
-import {
-  email,
-  fullName,
-  firstName,
-  websiteShort,
-} from "../../data/contact";
+import { email, fullName, firstName } from "../../data/contact";
 
 const Nav = () => {
   const router = useRouter();
-  const now = new Date();
-
   return (
     <section id="sidebar">
       <section id="intro">
@@ -50,15 +43,7 @@ const Nav = () => {
           </li>
         </ul>
       </section>
-      <section id="footer">
-        <SocialIcons />
-        <p className="copyright">
-          &copy; {fullName} | {now.getFullYear()} |{" "}
-          <Link href="/">
-            <a>{websiteShort}</a>
-          </Link>
-        </p>
-      </section>
+      <Footer />
     </section>
   );
 };
