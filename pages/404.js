@@ -9,6 +9,7 @@ import { findClosePages, findClosePosts } from "../lib/find-close";
 
 import { websiteShort } from '../data/contact';
 
+import { missingPageDescription } from '../data/descriptions';
 
 const Custom404 = ({ allPostsData }) => {
   const router = useRouter();
@@ -18,7 +19,7 @@ const Custom404 = ({ allPostsData }) => {
   const closePosts = findClosePosts(path, allPostsData);
 
   return (
-    <Layout title="404">
+    <Layout title="404" description={missingPageDescription}>
       <article className="post" id="404">
         <header>
           <div className="title align-center">

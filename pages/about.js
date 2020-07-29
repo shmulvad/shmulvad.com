@@ -3,8 +3,10 @@ import Link from 'next/link'
 import Layout from '../components/layout';
 import { getPageMarkdown } from '../lib/pages';
 
+import { aboutDescription } from '../data/descriptions';
+
 const About = ({ contentHtml, count }) => (
-  <Layout title="About">
+  <Layout title="About" description={aboutDescription}>
     <article className="post" id="about">
       <header>
         <div className="title">

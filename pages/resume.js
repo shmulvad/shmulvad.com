@@ -14,6 +14,8 @@ import experience from '../data/resume/experience';
 import extracurricular from '../data/resume/extracurricular';
 // import { skills, categories } from '../data/resume/skills';
 
+import { resumeDescription } from '../data/descriptions';
+
 const sections = [
   'Education',
   'Experience',
@@ -24,7 +26,7 @@ const sections = [
 ];
 
 const Resume = () => (
-  <Layout title="Resume">
+  <Layout title="Resume" description={resumeDescription}>
     <article className="post" id="resume">
       <header>
         <div className="title">
