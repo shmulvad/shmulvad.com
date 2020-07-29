@@ -1,16 +1,22 @@
-import Link from 'next/link';
-import { CommentCount } from 'disqus-react';
+import Link from "next/link";
+import { CommentCount } from "disqus-react";
 
-import Date from '../date';
+import Date from "../date";
 
-import { websiteLong } from '../../data/contact';
+import { websiteLong } from "../../data/contact";
 
 const Preview = ({ title, date, summary, heroImg, id }) => {
   const link = `/blog/${id}`;
   return (
     <div className="blog-preview">
-      <h2><Link href={link}><a>{title}</a></Link></h2>
-      <h5 id="date"><Date dateString={date} /></h5>
+      <h2>
+        <Link href={link}>
+          <a>{title}</a>
+        </Link>
+      </h2>
+      <h5 id="date">
+        <Date dateString={date} />
+      </h5>
       <Link href={link}>
         <a className="image">
           <img className="preview-img" src={heroImg} alt={title} />
@@ -28,7 +34,7 @@ const Preview = ({ title, date, summary, heroImg, id }) => {
         <ul className="stats">
           <li>
             <CommentCount
-              shortname='shmulvad'
+              shortname="shmulvad"
               config={{
                 url: websiteLong + link,
                 identifier: id,
@@ -40,7 +46,7 @@ const Preview = ({ title, date, summary, heroImg, id }) => {
           </li>
         </ul>
       </footer>
-      <hr/>
+      <hr />
     </div>
   );
 };

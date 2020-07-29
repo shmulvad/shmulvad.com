@@ -1,3 +1,3 @@
-const cvLink = '/docs/SorenMulvadCv.pdf';
+const cvLink = "/docs/SorenMulvadCv.pdf";
 
 export default cvLink;

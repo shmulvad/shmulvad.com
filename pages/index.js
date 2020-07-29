@@ -5,7 +5,7 @@ import PreviewSimpleList from "../components/blog/preview-simple-list";
 
 import { getSortedPostsData } from "../lib/posts";
 
-import { indexDescription } from '../data/descriptions';
+import { indexDescription } from "../data/descriptions";
 
 const MAX_BLOG_POSTS = 4;
 
@@ -34,13 +34,13 @@ const Home = ({ allPostsData }) => {
           <Link href="/blog">
             <a>full blog</a>
           </Link>{" "}
-          or just the latest {numPosts} post{numPosts > 1 && 's'} here:
+          or just the latest {numPosts} post{numPosts > 1 && "s"} here:
         </p>
         <PreviewSimpleList posts={allPostsData} numPosts={numPosts} />
       </article>
     </Layout>
   );
-}
+};
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();

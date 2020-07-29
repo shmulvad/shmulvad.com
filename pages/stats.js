@@ -1,12 +1,12 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import Layout from '../components/layout';
+import Layout from "../components/layout";
 
-import Personal from '../components/stats/personal';
-import Github from '../components/stats/github';
+import Personal from "../components/stats/personal";
+import Github from "../components/stats/github";
 // import Steps from '../components/stats/steps';
 
-import { statsDescription } from '../data/descriptions';
+import { statsDescription } from "../data/descriptions";
 
 const Stats = () => (
   <Layout title="Stats" description={statsDescription}>
@@ -14,7 +14,9 @@ const Stats = () => (
       <header>
         <div className="title">
           <h2>
-            <Link href="/stats"><a>Stats</a></Link>
+            <Link href="/stats">
+              <a>Stats</a>
+            </Link>
           </h2>
         </div>
       </header>

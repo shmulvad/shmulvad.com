@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { socialIcons } from "../../data/contact";
 
-
 const SocialIcons = () => (
   <ul className="icons">
     {socialIcons.map((s) => (
@@ -13,6 +12,6 @@ const SocialIcons = () => (
       </li>
     ))}
   </ul>
-)
+);
 
 export default SocialIcons;

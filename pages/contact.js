@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-import SocialIcons from '../components/general/social-icons';
+import SocialIcons from "../components/general/social-icons";
 import Layout from "../components/layout";
 
 import { email, countryCode, phone } from "../data/contact";
-import { contactDescription } from '../data/descriptions';
+import { contactDescription } from "../data/descriptions";
 
 const Contact = () => (
   <Layout title="Contact" description={contactDescription}>

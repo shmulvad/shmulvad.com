@@ -1,4 +1,4 @@
-import Degree from './education/degree';
+import Degree from "./education/degree";
 
 const Education = ({ data }) => (
   <div className="education">
@@ -7,10 +7,7 @@ const Education = ({ data }) => (
       <h3>Education</h3>
     </div>
     {data.map((degree, i) => (
-      <Degree
-        data={degree}
-        key={i}
-      />
+      <Degree data={degree} key={i} />
     ))}
   </div>
 );

@@ -1,28 +1,28 @@
 const degrees = [
   {
-    school: 'National University of Singapore',
-    degree: 'MSc Computer Science',
-    link: 'http://nus.edu.sg',
-    year: '2020-2021',
-    grade: '',
-    gradeLink: ''
+    school: "National University of Singapore",
+    degree: "MSc Computer Science",
+    link: "http://nus.edu.sg",
+    year: "2020-2021",
+    grade: "",
+    gradeLink: "",
   },
   {
-    school: 'University of Copenhagen',
-    degree: 'BSc Computer Science',
-    link: 'https://di.ku.dk/english/',
-    year: '2017-2020',
-    grade: 'GPA: 11.3 / 12.0',
-    gradeLink: '/docs/UCPH-GradeCard.pdf'
+    school: "University of Copenhagen",
+    degree: "BSc Computer Science",
+    link: "https://di.ku.dk/english/",
+    year: "2017-2020",
+    grade: "GPA: 11.3 / 12.0",
+    gradeLink: "/docs/UCPH-GradeCard.pdf",
   },
   {
-    school: 'National University of Singapore',
-    degree: 'BSc Exchange Semester - Computer Science & Economics',
-    link: 'http://nus.edu.sg',
-    year: '2019',
-    grade: 'CAP: 4.7 / 5.0',
-    gradeLink: '/docs/NUS-GradeCard.pdf'
-  }
+    school: "National University of Singapore",
+    degree: "BSc Exchange Semester - Computer Science & Economics",
+    link: "http://nus.edu.sg",
+    year: "2019",
+    grade: "CAP: 4.7 / 5.0",
+    gradeLink: "/docs/NUS-GradeCard.pdf",
+  },
 ];
 
 export default degrees;

@@ -1,7 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faFileDownload} from '@fortawesome/free-solid-svg-icons/faFileDownload';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileDownload } from "@fortawesome/free-solid-svg-icons/faFileDownload";
 
-import cvLink from '../../data/resume/cv';
+import cvLink from "../../data/resume/cv";
 
 const Download = () => (
   <div className="align-center download">
