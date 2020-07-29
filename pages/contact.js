@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Layout from "../components/layout";
-import { socialIcons, email, countryCode, phone } from "../data/contact";
+import { email, countryCode, phone } from "../data/contact";
+
+import SocialIcons from '../components/general/social-icons';
 
 const Contact = () => (
   <Layout title="Contact">
@@ -26,20 +27,7 @@ const Contact = () => (
           .
         </p>
       </div>
-      <ul className="icons">
-        {socialIcons.map((s) => (
-          <li key={s.label}>
-            <a href={s.link}>
-              <FontAwesomeIcon
-                icon={s.icon}
-                height="1em"
-                title={s.label}
-                alt={s.label}
-              />
-            </a>
-          </li>
-        ))}
-      </ul>
+      <SocialIcons />
     </article>
   </Layout>
 );

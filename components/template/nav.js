@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import SocialIcons from '../general/social-icons';
 
 import {
-  socialIcons,
   email,
   fullName,
   firstName,
@@ -29,7 +29,6 @@ const Nav = () => {
           </p>
         </header>
       </section>
-
       <section className="blurb">
         <h2>About</h2>
         <p>
@@ -51,23 +50,13 @@ const Nav = () => {
           </li>
         </ul>
       </section>
-
       <section id="footer">
-        <ul className="icons">
-          {socialIcons.map((s) => (
-            <li key={s.label}>
-              <a href={s.link}>
-                <FontAwesomeIcon icon={s.icon} height="1em" alt={s.label} />
-              </a>
-            </li>
-          ))}
-        </ul>
+        <SocialIcons />
         <p className="copyright">
           &copy; {fullName} | {now.getFullYear()} |{" "}
           <Link href="/">
             <a>{websiteShort}</a>
           </Link>
-          .
         </p>
       </section>
     </section>
