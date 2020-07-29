@@ -1,9 +1,9 @@
-import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
-import faFacebook from '@fortawesome/fontawesome-free-brands/faFacebookF';
-import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram';
-import faLinkedinIn from '@fortawesome/fontawesome-free-brands/faLinkedinIn';
-import faStackOverflow from '@fortawesome/fontawesome-free-brands/faStackOverflow';
-import faEnvelope from '@fortawesome/fontawesome-free-regular/faEnvelope';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons/faFacebook';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
+import { faStackOverflow } from '@fortawesome/free-brands-svg-icons/faStackOverflow';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
 
 const socialIcons = [
   {

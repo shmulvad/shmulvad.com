@@ -8,7 +8,7 @@ import { getSortedPostsData } from "../lib/posts";
 import { blogDescription } from '../data/descriptions';
 
 const Blog = ({ posts }) => (
-  <Layout title="Blog" description={blogDescription} >
+  <Layout sortedPostsData={posts} title="Blog" description={blogDescription} >
     <article className="post mini-post" id="blog">
       <header>
         <div className="title">
@@ -38,7 +38,7 @@ const Blog = ({ posts }) => (
 );
 
 export async function getStaticProps() {
-  const posts = await getSortedPostsData();
+  const posts = getSortedPostsData();
   return {
     props: {
       posts,
