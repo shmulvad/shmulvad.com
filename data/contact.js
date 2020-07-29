@@ -9,31 +9,37 @@ const socialIcons = [
   {
     link: "https://github.com/shmulvad",
     label: "GitHub",
+    color: "#9843a7",
     icon: faGithub,
   },
   {
     link: "https://stackoverflow.com/users/9248793/shmulvad",
     label: "StackOverflow",
+    color: "#ef8236",
     icon: faStackOverflow,
   },
   {
     link: "https://www.linkedin.com/in/shmulvad/",
     label: "LinkedIn",
+    color: "#0e76a8",
     icon: faLinkedinIn,
   },
   {
     link: "https://facebook.com/shmulvad",
     label: "Facebook",
+    color: "#3b5998",
     icon: faFacebook,
   },
   {
     link: "https://www.instagram.com/shmulvad/",
     label: "Instagram",
+    color: "#C13584",
     icon: faInstagram,
   },
   {
     link: "mailto:shmulvad@gmail.com",
     label: "Email",
+    color: "#3b5998",
     icon: faEnvelope,
   },
 ];
