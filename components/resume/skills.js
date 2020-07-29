@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 
 import CategoryButton from './Skills/CategoryButton';
 import SkillBar from './Skills/SkillBar';
@@ -55,27 +54,6 @@ const Skills = ({ categories, skills }) => {
       <div className="skill-row-container">{getRows()}</div>
     </div>
   );
-};
-
-Skills.propTypes = {
-  skills: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      compentency: PropTypes.number,
-      category: PropTypes.arrayOf(PropTypes.string)
-    })
-  ),
-  categories: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      color: PropTypes.string
-    })
-  )
-};
-
-Skills.defaultProps = {
-  skills: [],
-  categories: []
 };
 
 export default Skills;
