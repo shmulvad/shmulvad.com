@@ -1,15 +1,18 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import CategoryButton from './Skills/CategoryButton';
-import SkillBar from './Skills/SkillBar';
+import CategoryButton from "./Skills/CategoryButton";
+import SkillBar from "./Skills/SkillBar";
 
 const Skills = ({ categories, skills }) => {
-  const buttons = ['All'].concat(categories.map(cat => cat.name));
-  const [activeCategory, setActiveCategory] = useState('All');
+  const buttons = ["All"].concat(categories.map((cat) => cat.name));
+  const [activeCategory, setActiveCategory] = useState("All");
 
-  const getRows = () => (
+  const getRows = () =>
     skills
-      .filter(skill => activeCategory === 'All' || skill.category.includes(activeCategory))
+      .filter(
+        (skill) =>
+          activeCategory === "All" || skill.category.includes(activeCategory)
+      )
       .sort((a, b) => {
         let ret = 0;
         if (a.compentency > b.compentency) ret = -1;
@@ -20,21 +23,16 @@ const Skills = ({ categories, skills }) => {
         else if (a.title < b.title) ret = -1;
         return ret;
       })
-      .map(skill => (
-        <SkillBar
-          categories={categories}
-          data={skill}
-          key={skill.title}
-        />
-      ))
-  );
+      .map((skill) => (
+        <SkillBar categories={categories} data={skill} key={skill.title} />
+      ));
 
-  const handleChildClick = label => {
-    setActiveCategory(prevActive => (prevActive === label ? 'All' : label));
+  const handleChildClick = (label) => {
+    setActiveCategory((prevActive) => (prevActive === label ? "All" : label));
   };
 
   const getButtons = () => {
-    return buttons.map(key => (
+    return buttons.map((key) => (
       <CategoryButton
         label={key}
         key={key}

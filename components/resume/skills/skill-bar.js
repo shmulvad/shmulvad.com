@@ -3,12 +3,12 @@ const SkillBar = ({ data, categories }) => {
 
   // TODO: Consider averaging colors
   const titleStyle = {
-    background: categories.filter(cat => cat.name === category[0])[0].color
+    background: categories.filter((cat) => cat.name === category[0])[0].color,
   };
 
   const barStyle = {
     ...titleStyle,
-    width: '100%' // `${String(Math.min(100, Math.max((compentency / 5.0) * 100.0, 0)))}%`
+    width: "100%", // `${String(Math.min(100, Math.max((compentency / 5.0) * 100.0, 0)))}%`
   };
 
   return (

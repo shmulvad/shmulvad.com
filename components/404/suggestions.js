@@ -6,8 +6,8 @@ const Suggestions = ({ items, term }) => {
   return (
     <>
       <p>
-        The following {term}{items.length > 1 && "s"}{' '}
-        might satisfy your request:
+        The following {term}
+        {items.length > 1 && "s"} might satisfy your request:
       </p>
       <ul>
         {items.map((item) => {

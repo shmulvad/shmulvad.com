@@ -1,9 +1,9 @@
-import TableRow from './table-row';
+import TableRow from "./table-row";
 
 const Table = ({ data }) => (
   <table>
     <tbody>
-      {data.map(pair => (
+      {data.map((pair) => (
         <TableRow
           key={pair.label}
           label={pair.label}

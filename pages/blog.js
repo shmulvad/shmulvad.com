@@ -5,10 +5,10 @@ import Preview from "../components/blog/preview";
 
 import { getSortedPostsData } from "../lib/posts";
 
-import { blogDescription } from '../data/descriptions';
+import { blogDescription } from "../data/descriptions";
 
 const Blog = ({ posts }) => (
-  <Layout sortedPostsData={posts} title="Blog" description={blogDescription} >
+  <Layout sortedPostsData={posts} title="Blog" description={blogDescription}>
     <article className="post mini-post" id="blog">
       <header>
         <div className="title">

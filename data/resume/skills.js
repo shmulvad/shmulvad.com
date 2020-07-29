@@ -3,146 +3,146 @@
 // TODO: Add Althetic Skills, Office Skills (?)
 export const categories = [
   {
-    name: 'Languages',
-    color: '#6968b3'
+    name: "Languages",
+    color: "#6968b3",
   },
   {
-    name: 'Data Science',
-    color: '#515dd4'
+    name: "Data Science",
+    color: "#515dd4",
   },
   {
-    name: 'Web Development',
-    color: '#c3423f'
+    name: "Web Development",
+    color: "#c3423f",
   },
   {
-    name: 'Functional Programming',
-    color: '#37b1f5'
+    name: "Functional Programming",
+    color: "#37b1f5",
   },
   {
-    name: 'Other',
-    color: '#949494'
-  }
+    name: "Other",
+    color: "#949494",
+  },
 ];
 
 export const skills = [
   {
-    title: 'JavaScript',
+    title: "JavaScript",
     compentency: 5,
-    category: ['Web Development', 'Languages']
+    category: ["Web Development", "Languages"],
   },
   {
-    title: 'Node.JS',
+    title: "Node.JS",
     compentency: 3,
-    category: ['Web Development']
+    category: ["Web Development"],
   },
   {
-    title: 'React',
+    title: "React",
     compentency: 4,
-    category: ['Web Development']
+    category: ["Web Development"],
   },
   {
-    title: 'LaTeX',
+    title: "LaTeX",
     compentency: 1,
-    category: ['Other', 'Languages']
+    category: ["Other", "Languages"],
   },
   {
-    title: 'C#',
+    title: "C#",
     compentency: 4,
-    category: ['Languages']
+    category: ["Languages"],
   },
   {
-    title: 'Haskell',
+    title: "Haskell",
     compentency: 4,
-    category: ['Functional Programming', 'Languages']
+    category: ["Functional Programming", "Languages"],
   },
   {
-    title: 'F#',
+    title: "F#",
     compentency: 4,
-    category: ['Functional Programming', 'Languages']
+    category: ["Functional Programming", "Languages"],
   },
   {
-    title: 'Bash',
+    title: "Bash",
     compentency: 4,
-    category: ['Languages']
+    category: ["Languages"],
   },
   {
-    title: 'PostgreSQL',
+    title: "PostgreSQL",
     compentency: 3,
-    category: ['Web Development', 'Languages']
+    category: ["Web Development", "Languages"],
   },
   {
-    title: 'Data Analysis',
+    title: "Data Analysis",
     compentency: 2,
-    category: ['Data Science']
+    category: ["Data Science"],
   },
   {
-    title: 'Git/GitHub',
+    title: "Git/GitHub",
     compentency: 4,
-    category: ['Other']
+    category: ["Other"],
   },
   {
-    title: 'Numpy',
+    title: "Numpy",
     compentency: 2,
-    category: ['Data Science']
+    category: ["Data Science"],
   },
   {
-    title: 'Jupyter',
+    title: "Jupyter",
     compentency: 2,
-    category: ['Data Science']
+    category: ["Data Science"],
   },
   {
-    title: 'HTML',
+    title: "HTML",
     compentency: 3,
-    category: ['Web Development', 'Languages']
+    category: ["Web Development", "Languages"],
   },
   {
-    title: 'CSS',
+    title: "CSS",
     compentency: 3,
-    category: ['Web Development', 'Languages']
+    category: ["Web Development", "Languages"],
   },
   {
-    title: 'Python',
+    title: "Python",
     compentency: 5,
-    category: ['Data Science', 'Languages']
+    category: ["Data Science", "Languages"],
   },
   {
-    title: 'Photoshop',
+    title: "Photoshop",
     compentency: 1,
-    category: ['Other']
+    category: ["Other"],
   },
   {
-    title: 'Keras',
+    title: "Keras",
     compentency: 2,
-    category: ['Data Science']
+    category: ["Data Science"],
   },
   {
-    title: 'Visualization',
+    title: "Visualization",
     compentency: 2,
-    category: ['Data Science']
+    category: ["Data Science"],
   },
   {
-    title: 'Pandas',
+    title: "Pandas",
     compentency: 2,
-    category: ['Data Science']
+    category: ["Data Science"],
   },
   {
-    title: 'Matplotib',
+    title: "Matplotib",
     compentency: 2,
-    category: ['Data Science']
+    category: ["Data Science"],
   },
   {
-    title: 'Scikit-Lean',
+    title: "Scikit-Lean",
     compentency: 2,
-    category: ['Data Science']
+    category: ["Data Science"],
   },
   {
-    title: 'Final Cut Pro',
+    title: "Final Cut Pro",
     compentency: 1,
-    category: ['Other']
+    category: ["Other"],
   },
   {
-    title: 'WordPress',
+    title: "WordPress",
     compentency: 1,
-    category: ['Web Development']
-  }
+    category: ["Web Development"],
+  },
 ];

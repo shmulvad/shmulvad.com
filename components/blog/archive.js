@@ -24,15 +24,16 @@ const Archive = ({ sortedPostsData }) => {
   );
 
   // Only fuzzy search if user has actually typed something
-  const filteredPosts = searchInput === ''
-    ? filteredByCategory
-    : filteredByCategory
-        .map((post) => {
-          const fuzzyData = fuzzyMatch(searchInput, post.title);
-          return { ...post, fuzzyData };
-        })
-        .filter((post) => post.fuzzyData[0]) // If matched fuzzy search
-        .sort((a, b) => b.fuzzyData[1] - a.fuzzyData[1]); // fuzzyData[1] is score
+  const filteredPosts =
+    searchInput === ""
+      ? filteredByCategory
+      : filteredByCategory
+          .map((post) => {
+            const fuzzyData = fuzzyMatch(searchInput, post.title);
+            return { ...post, fuzzyData };
+          })
+          .filter((post) => post.fuzzyData[0]) // If matched fuzzy search
+          .sort((a, b) => b.fuzzyData[1] - a.fuzzyData[1]); // fuzzyData[1] is score
 
   const handleSearchChange = (event) => {
     event.preventDefault();

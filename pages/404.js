@@ -7,9 +7,9 @@ import Suggestions from "../components/404/suggestions";
 import { getSortedPostsData } from "../lib/posts";
 import { findClosePages, findClosePosts } from "../lib/find-close";
 
-import { websiteShort } from '../data/contact';
+import { websiteShort } from "../data/contact";
 
-import { missingPageDescription } from '../data/descriptions';
+import { missingPageDescription } from "../data/descriptions";
 
 const Custom404 = ({ allPostsData }) => {
   const router = useRouter();
@@ -33,7 +33,11 @@ const Custom404 = ({ allPostsData }) => {
         </header>
         <p>
           Sorry, I don't know how you got here. But the page{" "}
-          <em>"{websiteShort}{router.asPath}"</em> could not be found.
+          <em>
+            "{websiteShort}
+            {router.asPath}"
+          </em>{" "}
+          could not be found.
         </p>
         <Suggestions items={closePages} term="page" />
         <Suggestions items={closePosts} term="post" />

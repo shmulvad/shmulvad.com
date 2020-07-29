@@ -1,4 +1,4 @@
-import { getPostData } from '../../../lib/posts';
+import { getPostData } from "../../../lib/posts";
 
 // Get post id pid
 export default async (req, res) => {
@@ -12,4 +12,4 @@ export default async (req, res) => {
   } else {
     res.status(200).json({ id, date, content, error });
   }
-}
+};

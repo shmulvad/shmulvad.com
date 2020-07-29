@@ -38,7 +38,11 @@ const Layout = ({ children, title, description, sortedPostsData }) => {
       </Head>
       <Header />
       <main id="main">{children}</main>
-      {!!sortedPostsData ? <Archive sortedPostsData={sortedPostsData} /> : <Nav />}
+      {!!sortedPostsData ? (
+        <Archive sortedPostsData={sortedPostsData} />
+      ) : (
+        <Nav />
+      )}
     </div>
   );
 };

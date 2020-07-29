@@ -1,4 +1,4 @@
-import Position from './experience/position';
+import Position from "./experience/position";
 
 const PositionList = ({ data, positions_type, short }) => (
   <div className="experience">
@@ -6,11 +6,8 @@ const PositionList = ({ data, positions_type, short }) => (
     <div className="title">
       <h3>{positions_type}</h3>
     </div>
-    {data.map(job => (
-      <Position
-        data={job}
-        key={job.company}
-      />
+    {data.map((job) => (
+      <Position data={job} key={job.company} />
     ))}
   </div>
 );

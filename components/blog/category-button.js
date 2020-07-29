@@ -1,6 +1,6 @@
 const CategoryButton = ({ handleClick, active, label }) => (
   <button
-    className={`skillbutton ${active ? 'skillbutton-active' : ''}`}
+    className={`skillbutton ${active ? "skillbutton-active" : ""}`}
     type="button"
     onClick={() => handleClick(label)}
   >

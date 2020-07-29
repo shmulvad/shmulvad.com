@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 import { getNewestPostId } from "../../lib/posts";
-
 
 const Latest = ({ newestPostId }) => {
   const router = useRouter();
@@ -18,7 +17,7 @@ export async function getStaticProps() {
   const newestPostId = getNewestPostId();
   return {
     props: {
-      newestPostId
+      newestPostId,
     },
   };
 }

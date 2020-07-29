@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch";
@@ -8,7 +8,7 @@ const Search = ({ value, handleChange }) => {
   return (
     <div className="input-container">
       <FontAwesomeIcon
-        className={`search-icon ${isFocused && 'is-focused'}`}
+        className={`search-icon ${isFocused && "is-focused"}`}
         icon={faSearch}
         alt="Search"
       />
@@ -24,6 +24,6 @@ const Search = ({ value, handleChange }) => {
       />
     </div>
   );
-}
+};
 
 export default Search;
