@@ -1,24 +1,24 @@
 import { useEffect } from 'react';
 import { useRouter } from "next/router";
 
-import { getNewestId } from "../../lib/posts";
+import { getNewestPostId } from "../../lib/posts";
 
 
-const Latest = ({ newestId }) => {
+const Latest = ({ newestPostId }) => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push(`/blog/${newestId}`);
+    router.push(`/blog/${newestPostId}`);
   }, []);
 
   return null;
 };
 
 export async function getStaticProps() {
-  const newestId = getNewestId();
+  const newestPostId = getNewestPostId();
   return {
     props: {
-      newestId
+      newestPostId
     },
   };
 }
