@@ -1,4 +1,4 @@
- @import '../node_modules/normalize.css/normalize.css';
+@import '../node_modules/normalize.css/normalize.css';
 
 @import 'libs/vars';
 @import 'libs/functions';
@@ -36,6 +36,7 @@
 
 // Component.
 
+  @import 'components/archive';
 	@import 'components/author';
 	@import 'components/blurb';
 	@import 'components/box';
