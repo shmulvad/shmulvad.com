@@ -1,30 +1,42 @@
 import Link from "next/link";
-import Head from 'next/head';
+import Head from "next/head";
 
-import { DiscussionEmbed } from 'disqus-react';
+import { DiscussionEmbed } from "disqus-react";
 
 import Layout from "../../components/layout";
 import Date from "../../components/date";
 
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import { websiteLong } from "../../data/contact";
 
-import { websiteLong } from '../../data/contact';
+import {
+  getAllPostIds,
+  getPostData,
+  getSortedPostsData,
+} from "../../lib/posts";
 
-const Post = ({ postData }) => {
+const Post = ({ postData, sortedPostsData }) => {
   return (
-    <Layout fullPage title={postData.title}>
+    <Layout sortedPostsData={sortedPostsData} blogPage title={postData.title}>
       <Head>
         <meta property="og:type" content="article" />
         <meta property="og:title" content={postData.title} key="title" />
-        <meta property="og:description" content={postData.short} key="description" />
-        <meta property="og:image" content={websiteLong + postData.heroImg} key="image" />
+        <meta
+          property="og:description"
+          content={postData.short}
+          key="description"
+        />
+        <meta
+          property="og:image"
+          content={websiteLong + postData.heroImg}
+          key="image"
+        />
         {postData.containsMath && (
           <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css"
             integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG"
-            crossorigin="anonymous">
-          </link>
+            crossOrigin="anonymous"
+          ></link>
         )}
       </Head>
       <article className="post" id="blogpost">
@@ -49,22 +61,22 @@ const Post = ({ postData }) => {
         />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         <DiscussionEmbed
-          shortname='shmulvad'
+          shortname="shmulvad"
           config={{
             url: `${websiteLong}/blog/${postData.id}`,
             identifier: postData.id,
             title: postData.title,
-            language: 'en_US'
+            language: "en_US",
           }}
         />
-        <hr/>
+        <hr />
         <Link href="/blog">
           <a className="button large">← Back to blog</a>
         </Link>
       </article>
     </Layout>
   );
-}
+};
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();
@@ -75,10 +87,12 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const sortedPostsData = getSortedPostsData();
   const postData = await getPostData(params.id);
   return {
     props: {
       postData,
+      sortedPostsData,
     },
   };
 }
