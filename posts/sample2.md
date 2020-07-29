@@ -3,7 +3,7 @@ title: 'Sample post 2'
 author: 'Søren Mulvad'
 date: '2020-07-30'
 heroImg: '/images/posts/sample2/sample.jpg'
-categories: ['Tech', 'Random thoughts']
+categories: ['Random thoughts']
 short: 'My second sample blog post.'
 summary: '
 My second sample blog post. Here is another paragraph. This is getting kind of long now.
