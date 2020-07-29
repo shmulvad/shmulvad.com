@@ -3,7 +3,7 @@ title: 'New personal website'
 author: 'Søren Mulvad'
 date: '2020-07-29'
 heroImg: '/images/posts/new-personal/new.jpeg'
-categories: ['Tech', 'Random thoughts']
+categories: ['Tech']
 short: 'I have built a new personal website!'
 summary: '
 I have built a new personal website! In this post I will describe how I did it.
