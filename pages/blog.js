@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import Preview from "../components/blog/preview";
 
-import { getSortedPostsDataFull } from "../lib/posts";
+import { getSortedPostsData } from "../lib/posts";
 
 const Blog = ({ posts }) => (
   <Layout title="Blog">
@@ -35,8 +35,8 @@ const Blog = ({ posts }) => (
   </Layout>
 );
 
-export async function getStaticProps({}) {
-  const posts = await getSortedPostsDataFull();
+export async function getStaticProps() {
+  const posts = await getSortedPostsData();
   return {
     props: {
       posts,
