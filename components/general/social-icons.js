@@ -6,7 +6,7 @@ import { socialIcons } from "../../data/contact";
 
 const setColorsStatic = (curLabel) => {
   return socialIcons.reduce((acc, icon) => {
-    const color = icon.label === curLabel ? icon.color : null;
+    const color = icon.label === curLabel ? icon.color : "gray";
     acc[icon.label] = color;
     return acc;
   }, {});
@@ -26,6 +26,7 @@ const SocialIcons = () => {
               height="1em"
               onMouseOver={() => setColors(setColorsStatic(s.label))}
               onMouseLeave={() => setColors(setColorsStatic(null))}
+              style={{transition: "color 0.3s ease-out"}}
             />
           </a>
         </li>
