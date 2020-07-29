@@ -8,7 +8,8 @@ import { fullName, websiteLong } from '../data/contact';
 
 const siteTitle = fullName;
 
-const Layout = ({ children, fullPage, title }) => {
+const Layout = ({ children, fullPage, title, description }) => {
+  const titleToUse = title ? `${title} | ${siteTitle}` : siteTitle;
   return (
     <div id="wrapper">
       <Head>
@@ -20,14 +21,15 @@ const Layout = ({ children, fullPage, title }) => {
         />
         <meta
           name="description"
-          content={`${fullName}'s personal website. Facts, thoughts, bad ideas, and everything else.`}
+          content={`${fullName}'s personal website. ${description}`}
           key="description"
         />
         <meta property="og:image" content={`${websiteLong}/images/shmulvad.jpg`} key="image" />
-        <meta name="og:title" content={siteTitle} key="title" />
+        <meta name="og:title" content={titleToUse} key="title" />
+        <meta property="og:locale" content="en_US" />
         <meta name="twitter:creator" content="@shmulvad" />
         <meta name="twitter:card" content="summary_large_image" />
-        <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title> :
+        <title>{titleToUse}</title> :
       </Head>
       <Header />
       <main id="main">{children}</main>

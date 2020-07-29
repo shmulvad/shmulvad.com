@@ -14,7 +14,6 @@ const Post = ({ postData }) => {
   return (
     <Layout fullPage title={postData.title}>
       <Head>
-        <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={postData.title} key="title" />
         <meta property="og:description" content={postData.short} key="description" />

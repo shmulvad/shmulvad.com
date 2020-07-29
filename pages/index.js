@@ -5,10 +5,12 @@ import IndexPosts from "../components/index-posts";
 
 import { getSortedPostsData } from "../lib/posts";
 
+import { indexDescription } from '../data/descriptions';
+
 const MAX_BLOG_POSTS = 4;
 
 const Home = ({ allPostsData }) => (
-  <Layout>
+  <Layout description={indexDescription}>
     <article className="post" id="home">
       <header>
         <div className="title align-center">

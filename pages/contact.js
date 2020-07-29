@@ -1,12 +1,13 @@
 import Link from "next/link";
 
-import Layout from "../components/layout";
-import { email, countryCode, phone } from "../data/contact";
-
 import SocialIcons from '../components/general/social-icons';
+import Layout from "../components/layout";
+
+import { email, countryCode, phone } from "../data/contact";
+import { contactDescription } from '../data/descriptions';
 
 const Contact = () => (
-  <Layout title="Contact">
+  <Layout title="Contact" description={contactDescription}>
     <article className="post" id="contact">
       <header>
         <div className="title">
