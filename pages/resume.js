@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Layout from "../components/layout";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import Education from "../components/resume/education";
 import PositionList from "../components/resume/position-list";
@@ -40,7 +40,6 @@ const Resume = () => (
             {sections.map((sec) => (
               <h4 key={sec}>
                 <AnchorLink href={`#${sec.toLowerCase()}`}>{sec}</AnchorLink>
-                {/* <a href={`#${sec.toLowerCase()}`}>{sec}</a> */}
               </h4>
             ))}
           </div>
