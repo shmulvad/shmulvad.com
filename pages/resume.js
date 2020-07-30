@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Layout from "../components/layout";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import Education from "../components/resume/education";
 import PositionList from "../components/resume/position-list";
@@ -38,7 +39,8 @@ const Resume = () => (
           <div className="link-container">
             {sections.map((sec) => (
               <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
+                <AnchorLink href={`#${sec.toLowerCase()}`}>{sec}</AnchorLink>
+                {/* <a href={`#${sec.toLowerCase()}`}>{sec}</a> */}
               </h4>
             ))}
           </div>
@@ -60,11 +62,9 @@ const Resume = () => (
       <Courses data={courses} />
       <References />
       <div className="align-center">
-        <h2>
-          <Link href="resume">
-            <a>▲ Go back up ▲</a>
-          </Link>
-        </h2>
+        <h4>
+          <AnchorLink href="#resume">▲ Go back up ▲</AnchorLink>
+        </h4>
       </div>
     </article>
   </Layout>
