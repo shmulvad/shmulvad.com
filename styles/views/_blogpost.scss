@@ -11,4 +11,22 @@
   .button {
     margin-bottom: 20px;
   }
+
+  sup {
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-left: 2px;
+  }
+
+  a.footnote-ref {
+    border-bottom: none;
+    font-size: 12px;
+    vertical-align: text-bottom;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  a.footnote-backref {
+    margin-left: 5px;
+  }
 }

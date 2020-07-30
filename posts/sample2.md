@@ -12,11 +12,14 @@ Here is just a little more.
 '
 ---
 
-This is just another sample blog post. The blog post is written in **Markdown**. The following should be _italic_.
+This is just another sample blog post. The blog post is written in **Markdown**. The following should be _italic_. Here is a footnote[^1].
 
 Hopefully we can also have lists:
 
 - **Item 1**: Some important text
 - **Item 2**: Some other important text
 
-This is the end of the post.
+This is the end of the post[^2].
+
+[^1]: This is a footnote.
+[^2]: And there is a final footnote.
