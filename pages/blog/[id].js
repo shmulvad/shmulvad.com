@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Link from "next/link";
 import Head from "next/head";
 
@@ -15,6 +16,24 @@ import {
 } from "../../lib/posts";
 
 const Post = ({ postData, sortedPostsData }) => {
+  // Fix anchor links on page. Make sure that they take the height of the
+  // header into account and also make the scrolling smooth. It is the
+  // footnotes that create anchor links
+  useEffect(() => {
+    const ADDITIONAL_OFFSET = 5; // px
+    const headerElm = document.getElementById("header");
+    const offset = headerElm.offsetHeight + ADDITIONAL_OFFSET;
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const scrollDest = document.querySelector(this.getAttribute("href"));
+        const scrollDestTop = scrollDest.getBoundingClientRect().top;
+        const top = scrollDestTop + window.pageYOffset - offset;
+        window.scrollTo({ top, behavior: "smooth" });
+      });
+    });
+  }, []);
+
   return (
     <Layout sortedPostsData={sortedPostsData} blogPage title={postData.title}>
       <Head>
@@ -71,7 +90,7 @@ const Post = ({ postData, sortedPostsData }) => {
         />
         <hr />
         <Link href="/blog">
-          <a className="button large">← Back to blog</a>
+          <a className="button large">↩ Back to blog</a>
         </Link>
       </article>
     </Layout>
