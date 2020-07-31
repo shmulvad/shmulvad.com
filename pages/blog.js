@@ -26,6 +26,7 @@ const Blog = ({ posts }) => (
             <Preview
               title={post.title}
               date={post.date}
+              readStatText={post.readStatText}
               summary={post.summary}
               heroImg={post.heroImg}
               id={post.id}

@@ -6,7 +6,7 @@ const KEY = "GITHUB-DATA";
 
 const ssrCache = new LRUCache({
   max: 100,
-  maxAge: 1000 * 60 * 30, // 0.5 hour
+  maxAge: 1000 * 60 * 60, // 1 hour
 });
 
 export default async (req, res) => {

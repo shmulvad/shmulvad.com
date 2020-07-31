@@ -4,6 +4,9 @@ import Head from "next/head";
 
 import { DiscussionEmbed } from "disqus-react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookOpen } from "@fortawesome/free-solid-svg-icons/faBookOpen";
+
 import Layout from "../../components/layout";
 import Date from "../../components/date";
 
@@ -67,9 +70,18 @@ const Post = ({ postData, sortedPostsData }) => {
               </Link>
             </h2>
             <p>{postData.short}</p>
-            <h4 id="date">
-              <Date dateString={postData.date} />
-            </h4>
+          </div>
+          <div className="meta">
+            <Date showIcon className="published" dateString={postData.date} />
+            <span className="read-stat">
+              <FontAwesomeIcon
+                icon={faBookOpen}
+                color="gray"
+                height="0.8em"
+                style={{ marginRight: "10px" }}
+              />
+              {postData.readStatText}
+            </span>
           </div>
         </header>
         <img

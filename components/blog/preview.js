@@ -5,7 +5,7 @@ import Date from "../date";
 
 import { websiteLong } from "../../data/contact";
 
-const Preview = ({ title, date, summary, heroImg, id }) => {
+const Preview = ({ title, date, readStatText, summary, heroImg, id }) => {
   const link = `/blog/${id}`;
   return (
     <div className="blog-preview">
@@ -15,7 +15,8 @@ const Preview = ({ title, date, summary, heroImg, id }) => {
         </Link>
       </h2>
       <h5 id="date">
-        <Date dateString={date} />
+        <Date className="published" dateString={date} />
+        <span className="light-text">{` | ${readStatText}`}</span>
       </h5>
       <Link href={link}>
         <a className="image">
