@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CommentCount } from "disqus-react";
 
 import Date from "../date";
+import Image from "../general/image";
 
 import { websiteLong } from "../../data/contact";
 
@@ -20,7 +21,7 @@ const Preview = ({ title, date, readStatText, summary, heroImg, id }) => {
       </h5>
       <Link href={link}>
         <a className="image">
-          <img className="preview-img" src={heroImg} alt={title} />
+          <Image className="preview-img" src={`posts/${heroImg}`} alt={title} />
         </a>
       </Link>
       <p>{summary}</p>

@@ -27,7 +27,7 @@ const Layout = ({ children, title, description, sortedPostsData }) => {
         />
         <meta
           property="og:image"
-          content={`${websiteLong}/images/shmulvad.jpg`}
+          content={websiteLong + require("images/shmulvad.jpg")}
           key="image"
         />
         <meta name="og:title" content={titleToUse} key="title" />

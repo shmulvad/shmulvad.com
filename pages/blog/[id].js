@@ -9,14 +9,15 @@ import { faBookOpen } from "@fortawesome/free-solid-svg-icons/faBookOpen";
 
 import Layout from "../../components/layout";
 import Date from "../../components/date";
-
-import { websiteLong } from "../../data/contact";
+import Image from "../../components/general/image";
 
 import {
   getAllPostIds,
   getPostData,
   getSortedPostsData,
 } from "../../lib/posts";
+
+import { websiteLong } from "../../data/contact";
 
 const Post = ({ postData, sortedPostsData }) => {
   // Fix anchor links on page. Make sure that they take the height of the
@@ -49,7 +50,7 @@ const Post = ({ postData, sortedPostsData }) => {
         />
         <meta
           property="og:image"
-          content={websiteLong + postData.heroImg}
+          content={websiteLong + require(`images/posts/${postData.heroImg}`)}
           key="image"
         />
         {postData.containsMath && (
@@ -84,11 +85,10 @@ const Post = ({ postData, sortedPostsData }) => {
             </span>
           </div>
         </header>
-        <img
-          className="hero-img"
-          src={postData.heroImg}
+        <Image
+          className="preview-img hero-img"
+          src={`posts/${postData.heroImg}`}
           alt={postData.title}
-          title={postData.title}
         />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         <DiscussionEmbed
