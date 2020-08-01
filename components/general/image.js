@@ -6,7 +6,7 @@ const Image = ({ src, alt, className }) => {
   const [imageFadedAway, setImageFadedAway] = useState(false);
   const imgRef = useRef();
 
-  const onImageFire = () => {
+  const onImageLoad = () => {
     setImageLoaded(true);
     setTimeout(() => {
       setImageFadedAway(true);
@@ -16,7 +16,8 @@ const Image = ({ src, alt, className }) => {
   // If image is already loaded, onLoad will not trigger
   useEffect(() => {
     if (imgRef.current && imgRef.current.complete) {
-      onImageFire();
+      setImageLoaded(true);
+      setImageFadedAway(true);
     }
   }, []);
 
@@ -45,7 +46,7 @@ const Image = ({ src, alt, className }) => {
         src={require(`images/${src}`)}
         alt={alt}
         ref={imgRef}
-        onLoad={onImageFire}
+        onLoad={onImageLoad}
       />
     </div>
   );
