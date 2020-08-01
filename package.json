@@ -16,6 +16,7 @@
     "axios": "^0.19.2",
     "date-fns": "^2.15.0",
     "disqus-react": "^1.0.9",
+    "feed": "^4.2.1",
     "gray-matter": "^4.0.2",
     "image-trace-loader": "^1.0.2",
     "imagemin-mozjpeg": "^9.0.0",
