@@ -5,7 +5,7 @@ import Nav from "../components/template/nav";
 import Archive from "../components/blog/archive";
 
 import faviconHtml from "../data/favicon";
-import { fullName, websiteLong } from "../data/contact";
+import { fullName, websiteShort, websiteLong } from "../data/contact";
 
 const siteTitle = fullName;
 
@@ -19,6 +19,12 @@ const Layout = ({ children, title, description, sortedPostsData }) => {
           href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900"
           rel="stylesheet"
           async
+        />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={`RSS Feed for ${websiteShort}`}
+          href={`${websiteLong}/api/feed.xml`}
         />
         <meta
           name="description"

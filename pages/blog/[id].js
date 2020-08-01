@@ -6,6 +6,7 @@ import { DiscussionEmbed } from "disqus-react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons/faBookOpen";
+import { faRss } from "@fortawesome/free-solid-svg-icons/faRss";
 
 import Layout from "../../components/layout";
 import Date from "../../components/date";
@@ -91,6 +92,14 @@ const Post = ({ postData, sortedPostsData }) => {
           alt={postData.title}
         />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <a
+          href="/api/feed.xml"
+          title="RSS"
+          style={{ borderBottom: "none" }}
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faRss} alt="RSS" height="0.7em" />
+        </a>
         <DiscussionEmbed
           shortname="shmulvad"
           config={{
