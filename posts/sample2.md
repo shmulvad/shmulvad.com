@@ -2,7 +2,7 @@
 title: 'Sample post 2'
 author: 'Søren Mulvad'
 date: '2020-07-30'
-heroImg: '/images/posts/sample2/sample.jpg'
+heroImg: 'sample.jpg'
 categories: ['Random thoughts']
 short: 'My second sample blog post.'
 summary: '
