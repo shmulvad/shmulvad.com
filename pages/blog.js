@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRss } from "@fortawesome/free-solid-svg-icons/faRss";
+
 import Layout from "../components/layout";
 import Preview from "../components/blog/preview";
 
@@ -34,6 +37,14 @@ const Blog = ({ posts }) => (
             />
           );
         })}
+      <a
+        href="/api/feed.xml"
+        title="RSS"
+        style={{ borderBottom: "none" }}
+        target="_blank"
+      >
+        <FontAwesomeIcon icon={faRss} alt="RSS" height="0.7em" />
+      </a>
     </article>
   </Layout>
 );

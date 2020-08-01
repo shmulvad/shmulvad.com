@@ -1,7 +1,15 @@
 const TableRow = ({ label, link = "", value }) => (
   <tr>
     <td width="70%">{label}</td>
-    <td>{link.length ? <a href={link}>{value}</a> : value}</td>
+    <td>
+      {link.length ? (
+        <a href={link} target="_blank">
+          {value}
+        </a>
+      ) : (
+        value
+      )}
+    </td>
   </tr>
 );
 
