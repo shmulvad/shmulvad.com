@@ -5,7 +5,7 @@ import PreviewSimpleList from "../blog/preview-simple-list";
 import Search from "./search";
 import CategoryButton from "./category-button";
 
-import fuzzyMatch from "../../lib/fuzzy-match";
+import Fuse from "fuse.js";
 
 const ALL = "All";
 
@@ -19,6 +19,15 @@ const Archive = ({ sortedPostsData }) => {
     return [...acc, ...newCats];
   }, []);
 
+  const filterByFuzzyMatch = (categoryFilteredPosts) => {
+    const fuse = new Fuse(categoryFilteredPosts, {
+      keys: ["title"],
+      includeMatches: true,
+      minMatchCharLength: Math.min(2, searchInput.length)
+    });
+    return fuse.search(searchInput).map((match) => match.item);
+  };
+
   const filteredByCategory = sortedPostsData.filter(
     (post) => activeCategory === ALL || post.categories.includes(activeCategory)
   );
@@ -27,13 +36,7 @@ const Archive = ({ sortedPostsData }) => {
   const filteredPosts =
     searchInput === ""
       ? filteredByCategory
-      : filteredByCategory
-          .map((post) => {
-            const fuzzyData = fuzzyMatch(searchInput, post.title);
-            return { ...post, fuzzyData };
-          })
-          .filter((post) => post.fuzzyData[0]) // If matched fuzzy search
-          .sort((a, b) => b.fuzzyData[1] - a.fuzzyData[1]); // fuzzyData[1] is score
+      : filterByFuzzyMatch(filteredByCategory);
 
   const handleSearchChange = (event) => {
     event.preventDefault();
