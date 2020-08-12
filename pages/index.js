@@ -27,10 +27,7 @@ const Home = ({ allPostsData }) => {
         <p>
           Hey there, I'm Søren. Welcome to my personal website. Please feel free
           to check out all sections of the site!
-        </p>
-        <p>
-          I also write sometimes (or at least I plan to). Feel free to check out
-          my{" "}
+          I also write sometimes. You can check out my{" "}
           <Link href="/blog">
             <a>full blog</a>
           </Link>{" "}
