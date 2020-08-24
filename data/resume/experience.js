@@ -1,5 +1,16 @@
 const experience = [
   {
+    company: "National University of Singapore",
+    position: "Teaching Assistant",
+    link: "https://www.comp.nus.edu.sg",
+    daterange: "Aug 2020 - Current",
+    points: [
+      "Carrying out tasks that supplement teaching at professor level.",
+      "My responsibilities include conducting tutorials, marking of course assignments and administrative tasks.",
+      <>I am teaching the graduate module <a href="https://nusmods.com/modules/BT5110/data-management-and-warehousing" target="_blank">"BT5110 Data Management and Warehousing"</a> with a focus on databases and web development using MongoDB and Django.</>,
+    ],
+  },
+  {
     company: "IT Minds",
     position: "Software Developer",
     link: "https://www.it-minds.dk/forside",
@@ -17,8 +28,8 @@ const experience = [
     daterange: "Sep 2018 - Jun 2020",
     points: [
       "Carrying out tasks that supplement teaching at professor level.",
-      "Data Science (Feb 2020 - Jul 2020): Databases, reading of structured text, model design and implementation, data exploration and visualization.",
-      "Programming and Problem Solving (Sep 2018 - Jan 2019): Learning to become a problem solver, programming paradigmes, LaTeX and using the terminal.",
+      <><a href="https://kurser.ku.dk/course/ndab18000u" target="_blank">Data Science</a> (Feb 2020 - Jul 2020): Databases, reading of structured text, model design and implementation, data exploration and visualization.</>,
+      <><a href="https://kurser.ku.dk/course/ndab15009u/" target="_blank">Programming and Problem Solving</a> (Sep 2018 - Jan 2019): Learning to become a problem solver, programming paradigmes, LaTeX and using the terminal.</>,
     ],
   },
   {
