@@ -13,7 +13,7 @@ const degrees = [
     link: "https://di.ku.dk/english/",
     year: "2017-2020",
     grade: "GPA: 11.3 / 12.0",
-    gradeLink: "/docs/UCPH-GradeCard.pdf",
+    gradeLink: "/docs/BachelorCert.pdf",
   },
   {
     school: "National University of Singapore",
