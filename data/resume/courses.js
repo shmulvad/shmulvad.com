@@ -101,6 +101,32 @@ const courses = [
     link: "https://github.com/shmulvad/Caching-Strategies-for-Image-Processing",
     univerity: "University of Copenhagen",
   },
+  {
+    title: "Uncertainty Modelling in AI",
+    number: "CS5340",
+    link: "https://nusmods.com/modules/CS5340/uncertainty-modelling-in-ai",
+    univerity: "National University of Singapore",
+  },
+  {
+    title: "Neural Networks and Deep Learning",
+    number: "CS5242",
+    link:
+      "https://nusmods.com/modules/CS5242/neural-networks-and-deep-learning",
+    univerity: "National University of Singapore",
+  },
+  {
+    title: "AI Planning and Decision Making",
+    number: "CS5446",
+    link: "https://nusmods.com/modules/CS5446/ai-planning-and-decision-making",
+    univerity: "National University of Singapore",
+  },
+  {
+    title: "Big Data Systems for Data Science",
+    number: "CS5425",
+    link:
+      "https://nusmods.com/modules/CS5425/big-data-systems-for-data-science",
+    univerity: "National University of Singapore",
+  },
 ];
 
 export default courses;
