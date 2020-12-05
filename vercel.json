@@ -23,7 +23,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self' vitals.vercel-analytics.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com; font-src 'self' fonts.googleapis.com fonts.gstatic.com"
+          "value": "default-src 'self' vitals.vercel-analytics.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com; font-src 'self' fonts.googleapis.com fonts.gstatic.com; img-src 'self' data:"
         },
         {
           "key" : "X-Content-Type-Options",
