@@ -12,7 +12,7 @@ const GithubStats = () => {
     if (error) {
       value = "Error loading data";
     } else {
-      value = !data ? "Loading..." : data.data[key];
+      value = data ? data.data[key] : "Loading...";
       link = data && data.data[`${key}Url`];
     }
 
