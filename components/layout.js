@@ -17,8 +17,6 @@ const Layout = ({ children, title, description, sortedPostsData }) => {
         {faviconHtml}
         <link
           href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900"
-          integrity="y5wtqhlazlQ3/B8toDcTkZ2/7B53QR3xuY5mcNOMANzMJb2Or444o3byX83uM8sB"
-          crossOrigin="anonymous"
           rel="stylesheet"
           async
         />
