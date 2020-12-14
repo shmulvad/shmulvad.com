@@ -18,7 +18,7 @@ const SocialIcons = () => {
     <ul className="icons">
       {socialIcons.map((s) => (
         <li key={s.label}>
-          <a href={s.link} target="_blank">
+          <a href={s.link} target="_blank" rel="noopener">
             <FontAwesomeIcon
               icon={s.icon}
               alt={s.label}

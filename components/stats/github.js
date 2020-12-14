@@ -8,7 +8,8 @@ const GithubStats = () => {
   const { data, error } = useSWR("/api/github", axios.get);
 
   const dataToDisplay = Object.keys(githubData).map((key) => {
-    let [value, link] = ["", ""];
+    let value;
+    let link = "";
     if (error) {
       value = "Error loading data";
     } else {

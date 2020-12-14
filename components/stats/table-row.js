@@ -3,7 +3,7 @@ const TableRow = ({ label, link = "", value }) => (
     <td width="70%">{label}</td>
     <td>
       {link.length ? (
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noopener">
           {value}
         </a>
       ) : (
