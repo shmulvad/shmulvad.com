@@ -1,13 +1,23 @@
 const experience = [
   {
     company: "National University of Singapore",
+    position: "Assistant Lecturer",
+    link: "https://www.comp.nus.edu.sg",
+    daterange: "Dec 2020 - Current",
+    points: [
+      "Conducting classroom teaching of AI to NUS staff.",
+    ],
+  },
+  {
+    company: "National University of Singapore",
     position: "Teaching Assistant",
     link: "https://www.comp.nus.edu.sg",
     daterange: "Aug 2020 - Current",
     points: [
       "Carrying out tasks that supplement teaching at professor level.",
-      "My responsibilities include conducting tutorials, marking of course assignments and administrative tasks.",
-      <>I am teaching the graduate module <a href="https://nusmods.com/modules/BT5110/data-management-and-warehousing" target="_blank">"BT5110 Data Management and Warehousing"</a> with a focus on databases and web development using MongoDB and Django.</>,
+      "Responsibilities include conducting tutorials, marking of course assignments and administrative tasks.",
+      <><a href="https://nusmods.com/modules/CS5421/database-applications-design-and-tuning" target="_blank">CS5421 Database Applications Design and Tuning</a> (Jan 2021 - May 2021): Design and performance tuning of database applications.</>,
+      <><a href="https://nusmods.com/modules/BT5110/data-management-and-warehousing" target="_blank">BT5110 Data Management and Warehousing</a> (Aug 2020 - Dec 2020): Databases and web development using Django, PostgreSQL, MongoDB and XML.</>,
     ],
   },
   {
@@ -17,7 +27,8 @@ const experience = [
     daterange: "May 2019 - Jun 2020",
     points: [
       "Carrying out consultancy work on software development projects, writing code that solves business problems.",
-      "Languages and frameworks used include JavaScript/React/TensorFlow.js/Next.js and PHP.",
+      "Projects include set up of data pipeline for ID card recognition task.",
+      "Technologies used include TensorFlow, JavaScript/React and PostgreSQL.",
       "NB: On hold July 2019 - December 2019 due to exchange semester.",
     ],
   },

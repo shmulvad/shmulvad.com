@@ -7,13 +7,11 @@ import PositionList from "../components/resume/position-list";
 import Courses from "../components/resume/courses";
 import References from "../components/resume/references";
 import Download from "../components/resume/download";
-// import Skills from '../components/resume/skills';
 
 import courses from "../data/resume/courses";
 import degrees from "../data/resume/degrees";
 import experience from "../data/resume/experience";
 import extracurricular from "../data/resume/extracurricular";
-// import { skills, categories } from '../data/resume/skills';
 
 import { resumeDescription } from "../data/descriptions";
 
@@ -21,7 +19,6 @@ const sections = [
   "Education",
   "Experience",
   "Extracurricular",
-  // 'Skills',
   "Courses",
   "References",
 ];
@@ -57,7 +54,6 @@ const Resume = () => (
         positions_type="Extracurricular Activities"
         short="extracurricular"
       />
-      {/* <Skills skills={skills} categories={categories} /> */}
       <Courses data={courses} />
       <References />
       <div className="align-center">
