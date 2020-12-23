@@ -2,10 +2,9 @@
 
 [![Website](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fshmulvad.com)][website]
 ![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m786561631-d9e4a2f57ce496070387fec0?style=flat-square)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/shmulvad/shmulvad.com.svg?style=flat-square&logo=lgtm&logoWidth=18)][lgtm]
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/shmulvad/shmulvad.com.svg?style=flat-square&logo=lgtm&logoWidth=18)][lgtmQuality]
 [![Chromium HSTS preload](https://img.shields.io/hsts/preload/shmulvad.com?style=flat-square)][hsts]
-[![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade/shmulvad.com?publish&style=flat-square)][observatory]
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/shmulvad/shmulvad.com?style=flat-square)
-[![GitHub issues](https://img.shields.io/github/issues/shmulvad/shmulvad.com?style=flat-square)][issues]
 [![GitHub license](https://img.shields.io/github/license/shmulvad/shmulvad.com?style=flat-square)][license]
 
 This is the code for my personal website, [shmulvad.com][website].
@@ -28,8 +27,8 @@ _Assumes you have Node.js and Yarn installed_
 
 [website]: https://shmulvad.com
 [license]: https://github.com/shmulvad/shmulvad.com/blob/master/LICENSE
-[issues]: https://github.com/shmulvad/shmulvad.com/issues
+[lgtm]: https://lgtm.com/projects/g/shmulvad/shmulvad.com/alerts/
+[lgtmQuality]: https://lgtm.com/projects/g/shmulvad/shmulvad.com/context:javascript
 [vercel]: https://vercel.com/
 [futureImperfect]: https://html5up.net/future-imperfect
-[observatory]: https://observatory.mozilla.org/analyze/shmulvad.com
 [hsts]: https://hstspreload.org/?domain=shmulvad.com
