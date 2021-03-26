@@ -18,3 +18,9 @@ export const githubData = {
   totalRepos: { label: "Total repos", value: "Loading..." },
   mostStarred: { label: "Most starred repo", value: "Loading..." },
 };
+
+export const wakaData = {
+  languages: [ { label: "Languages", value: "Loading..." } ],
+  projects: [ { label: "Projects", value: "Loading..." } ],
+  editors: [ { label: "Editors", value: "Loading..." } ]
+};

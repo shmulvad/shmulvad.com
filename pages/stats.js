@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 
 import Personal from "../components/stats/personal";
 import Github from "../components/stats/github";
+import Wakatime from "../components/stats/wakatime";
 // import Steps from '../components/stats/steps';
 
 import { statsDescription } from "../data/descriptions";
@@ -22,6 +23,7 @@ const Stats = () => (
       </header>
       <Personal />
       <Github />
+      <Wakatime />
       {/* <Steps /> */}
     </article>
   </Layout>
