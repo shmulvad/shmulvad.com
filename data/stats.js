@@ -20,7 +20,7 @@ export const githubData = {
 };
 
 export const wakaData = {
-  editors: [ { label: "Editors", value: "Loading..." } ],
   languages: [ { label: "Languages", value: "Loading..." } ],
-  projects: [ { label: "Projects", value: "Loading..." } ]
+  projects: [ { label: "Projects", value: "Loading..." } ],
+  editors: [ { label: "Editors", value: "Loading..." } ]
 };
