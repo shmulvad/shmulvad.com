@@ -42,6 +42,7 @@
     "remark-math": "^4.0.0",
     "remark-rehype": "^8.0.0",
     "remark-toc": "^7.0.0",
+    "sanitize-filename": "^1.6.3",
     "sass": "^1.26.10",
     "swr": "^0.3.9",
     "tailwindcss": "^1.9.6"
