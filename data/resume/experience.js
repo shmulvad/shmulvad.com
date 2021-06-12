@@ -1,16 +1,27 @@
 const experience = [
   {
+    company: "ByteDance",
+    position: "Backend Engineer Intern",
+    link: "https://www.bytedance.com/en/",
+    daterange: "May 2021 - Current",
+    points: [
+      "Working on large-scale distributed systems in the data platforms department.",
+    ],
+  },
+  {
     company: "National University of Singapore",
     position: "Assistant Lecturer",
     link: "https://www.comp.nus.edu.sg",
     daterange: "Dec 2020 - Current",
     points: [
-      "Conducting classroom teaching of AI to NUS staff.",
+      "Responsible for facilitation and conduction of teaching sessions and grading of projects and presentations.",
+      "The Artificial Intelligence Competency Course is designed to equip NUS executive and administrative staff with basic knowledge of AI and experience in structuring projects with the CRISP-DM framework",
+      "Rolled out to over 4000 employees"
     ],
   },
   {
     company: "National University of Singapore",
-    position: "Teaching Assistant",
+    position: "Graduate Teaching Assistant",
     link: "https://www.comp.nus.edu.sg",
     daterange: "Aug 2020 - Current",
     points: [
