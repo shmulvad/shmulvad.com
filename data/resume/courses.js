@@ -127,6 +127,27 @@ const courses = [
       "https://nusmods.com/modules/CS5425/big-data-systems-for-data-science",
     university: "National University of Singapore",
   },
+  {
+    title: "Natural Language Processing",
+    number: "CS4248",
+    link:
+      "https://nusmods.com/modules/CS4248/natural-language-processing",
+    university: "National University of Singapore",
+  },
+  {
+    title: "3D Computer Vision",
+    number: "CS5477",
+    link:
+      "https://nusmods.com/modules/CS5477/3-d-computer-vision",
+    university: "National University of Singapore",
+  },
+  {
+    title: "Neural Networks and Deep Learning II",
+    number: "CS5260",
+    link:
+      "https://nusmods.com/modules/CS5260/neural-networks-and-deep-learning-ii",
+    university: "National University of Singapore",
+  },
 ];
 
 export default courses;
