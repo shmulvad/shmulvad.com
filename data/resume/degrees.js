@@ -4,7 +4,7 @@ const degrees = [
     degree: "MSc Computer Science",
     link: "http://nus.edu.sg",
     year: "2020-2021",
-    grade: "CAP: 4.6 / 5.0",
+    grade: "CAP: 4.8 / 5.0",
     gradeLink: "/docs/NUS-GradeCardMSc.pdf",
   },
   {
