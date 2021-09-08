@@ -1,14 +1,5 @@
 const experience = [
   {
-    company: "ByteDance",
-    position: "Backend Engineer Intern",
-    link: "https://www.bytedance.com/en/",
-    daterange: "May 2021 - Current",
-    points: [
-      "Working on large-scale distributed systems in the data platforms department.",
-    ],
-  },
-  {
     company: "National University of Singapore",
     position: "Assistant Lecturer",
     link: "https://www.comp.nus.edu.sg",
@@ -20,6 +11,16 @@ const experience = [
     ],
   },
   {
+    company: "ByteDance",
+    position: "Backend Engineer Intern",
+    link: "https://www.bytedance.com/en/",
+    daterange: "May 2021 - Jul 2021",
+    points: [
+      "Worked on large-scale distributed systems in the data platforms department.",
+      "Automated major parts of the onboarding experience."
+    ],
+  },
+  {
     company: "National University of Singapore",
     position: "Graduate Teaching Assistant",
     link: "https://www.comp.nus.edu.sg",
@@ -28,7 +29,7 @@ const experience = [
       "Carrying out tasks that supplement teaching at professor level.",
       "Responsibilities include conducting tutorials, marking of course assignments and administrative tasks.",
       <><a href="https://nusmods.com/modules/CS5421/database-applications-design-and-tuning" target="_blank">CS5421 Database Applications Design and Tuning</a> (Jan 2021 - May 2021): Design and performance tuning of database applications.</>,
-      <><a href="https://nusmods.com/modules/BT5110/data-management-and-warehousing" target="_blank">BT5110 Data Management and Warehousing</a> (Aug 2020 - Dec 2020): Databases and web development using Django, PostgreSQL, MongoDB and XML.</>,
+      <><a href="https://nusmods.com/modules/BT5110/data-management-and-warehousing" target="_blank">BT5110 Data Management and Warehousing</a> (Aug 2020/21 - Dec 2020/21): Databases and web development using Django, PostgreSQL, MongoDB and XML.</>,
     ],
   },
   {
