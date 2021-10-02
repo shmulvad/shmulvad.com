@@ -148,6 +148,27 @@ const courses = [
       "https://nusmods.com/modules/CS5260/neural-networks-and-deep-learning-ii",
     university: "National University of Singapore",
   },
+  {
+    title: "Knowledge Discovery and Data Mining",
+    number: "CS5228",
+    link:
+      "https://nusmods.com/modules/CS5228/knowledge-discovery-and-data-mining",
+    university: "National University of Singapore",
+  },
+  {
+    title: "Algorithmic Mechanism Design",
+    number: "CS5461",
+    link:
+      "https://nusmods.com/modules/CS5461/algorithmic-mechanism-design",
+    university: "National University of Singapore",
+  },
+  {
+    title: "Optimisation Algorithms",
+    number: "CS4234",
+    link:
+      "https://nusmods.com/modules/CS4234/optimisation-algorithms",
+    university: "National University of Singapore",
+  },
 ];
 
 export default courses;
