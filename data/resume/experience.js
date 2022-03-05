@@ -1,9 +1,20 @@
 const experience = [
   {
+    company: "Singapore Pools",
+    position: "Data Scientist",
+    link: "https://www.singaporepools.com.sg",
+    daterange: "Jan 2022 - Current",
+    points: [
+      "Automating tedious and manual tasks with machine learning.",
+      "Extracting patterns in data that enables the company to make better decisions.",
+      "Projects include fuzzy name matching, nudging segmentation model and more."
+    ],
+  },
+  {
     company: "National University of Singapore",
     position: "Assistant Lecturer",
     link: "https://www.comp.nus.edu.sg",
-    daterange: "Dec 2020 - Current",
+    daterange: "Dec 2020 - Oct 2021",
     points: [
       "Responsible for facilitation and conduction of teaching sessions and grading of projects and presentations.",
       "The Artificial Intelligence Competency Course is designed to equip NUS executive and administrative staff with basic knowledge of AI and experience in structuring projects with the CRISP-DM framework",

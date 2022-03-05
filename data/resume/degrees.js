@@ -3,9 +3,9 @@ const degrees = [
     school: "National University of Singapore",
     degree: "MSc Computer Science",
     link: "http://nus.edu.sg",
-    year: "2020-2021",
-    grade: "CAP: 4.8 / 5.0",
-    gradeLink: "/docs/NUS-GradeCardMSc.pdf",
+    year: "2020-2022",
+    grade: "CAP: 4.7 / 5.0",
+    gradeLink: "/docs/MasterCert.pdf",
   },
   {
     school: "University of Copenhagen",
