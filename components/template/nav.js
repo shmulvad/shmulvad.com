@@ -24,9 +24,7 @@ const Nav = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m {firstName}. I am a graduate Computer Science student at
-        National University of Singapore specializing in Artificial Intelligence
-        and former student and TA at University of Copenhagen.
+        Hi, I&apos;m {firstName}. I am a data scientist at Singapore Pools and Master of Computing from National University of Singapore with a specialisation in Artificial Intelligence.
       </p>
       <ul className="actions">
         <li>
